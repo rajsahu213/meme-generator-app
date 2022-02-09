@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    background-image: linear-gradient(to right, #672280, #a626d3);
+    padding: 30px;
+    align-items: center;
+    color: white;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.header-main h1 {
+    padding: 15px;
+    font-size: 30px;
+}
+
+.header p {
+    font-size: 22px;
+    margin: 25px 70px;
+}
