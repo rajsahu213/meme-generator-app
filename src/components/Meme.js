@@ -1,16 +1,16 @@
 import React from "react";
 import "./Meme.css";
 
-const Meme = () => {
+const Meme = (props) => {
     return (
         <div className="meme">
-            <form action="" className="meme-form">
-                <div className="inputs">
-                    <input type="text" placeholder="Top text" />
-                    <input type="text" placeholder="Bottom text" />
-                </div>
-                <button type="submit">Get a new meme image 🖼</button>
-            </form>
+            <img
+                src={props.imageUrl}
+                className="meme--image"
+                alt="Random Meme"
+            />
+            <h2 className="meme--text top">{props.topText}</h2>
+            <h2 className="meme--text bottom">{props.bottomText}</h2>
         </div>
     );
 };
